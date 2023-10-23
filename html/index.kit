@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/dd2a518837.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Montserrat:wght@200;400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="./dist/img/icons/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <title>GratysDesign</title>
+</head>
+
+<body>
+
+    <!-- header -->
+    <!-- @include 'header.kit' -->
+
+    <!-- main -->
+    <main class="main">
+        <div class="wrapper">
+
+            <div class="main-info">
+                <h1 class="main-info__header">computer graphic designer</h1>
+                <p class="main-info__text">Cześć, jestem <span class="main-info__span">Filip</span></p>
+                <div class="buttons-area">
+                    <a href="#portfolio"><button class="portfolio-btn">Portfolio</button></a>
+                    <a href="#contact"><button class="contact-btn">Kontakt</button></a>
+                </div>
+                <div class="mrufka-img-box"></div>
+            </div>
+
+            <!-- about me section -->
+            <section class="about-me" id="about-me">
+                <h2 class="about-me__header section-header">O mnie</h2>
+                <div class="about-box">
+                    <div class="about-me__background">
+                        <div class="about-me__background--photo"></div>
+                    </div>
+                    <p class="about-me__text">Swoją przygodę z grafiką komputerową rozpocząłem w 2013 roku. Od momentu,
+                        w
+                        którym wykonałem swoje pierwsze zlecenie, stale się rozwijam i nie przestaję doskonalić swoich
+                        umiejętności. <br><br>
+                        Jestem perfekcjonistą, zawsze dążę do uzyskania najlepszego możliwego efektu podczas tworzenia
+                        swoich prac. Potrzebujesz grafiki na specjalną okazję, witrynę sklepu czy
+                        może wizytówkę? Nie ma problemu, dane kontaktowe są na dole strony! Napisz do mnie, a chętnie
+                        pomogę
+                        Ci stworzyć wpadającą w oko, a jednocześnie
+                        przejrzystą identyfikację wizualną. </p>
+                </div>
+            </section>
+
+            <!-- offer section -->
+            <section class="offers" id="offers">
+                <h2 class="offers__header section-header">Usługi</h2>
+                <div class="offers__boxes">
+                    <div class="offers-box">
+                        <div class="box-header">
+                            <h3 class="box-header__header">Materiały reklamowe</h3>
+                        </div>
+                        <ul class="list">
+                            <li class="list__item"><i class="fa-solid fa-check"></i>Opakowania</li>
+                            <li class="list__item"><i class="fa-solid fa-check"></i>Ulotki</li>
+                            <li class="list__item"><i class="fa-solid fa-check"></i>Metki</li>
+                            <li class="list__item"><i class="fa-solid fa-check"></i>Gadżety firmowe</li>
+                        </ul>
+                    </div>
+                    <div class="offers-box">
+                        <div class="box-header">
+                            <h3 class="box-header__header">Identyfikacja wizualna</h3>
+                        </div>
+                        <ul class="list">
+                            <li class="list__item"><i class="fa-solid fa-check"></i>Logo</li>
+                            <li class="list__item"><i class="fa-solid fa-check"></i>Wizytówki</li>
+                            <li class="list__item"><i class="fa-solid fa-check"></i>Reklamy tzw. pierwszego kontaktu
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="offers-box">
+                        <div class="box-header">
+                            <h3 class="box-header__header">Obróbka zdjęć</h3>
+                        </div>
+                        <ul class="list">
+                            <li class="list__item"><i class="fa-solid fa-check"></i>Wycinanie/zmiana tła</li>
+                            <li class="list__item"><i class="fa-solid fa-check"></i>Fotomanipulacja</li>
+                            <li class="list__item"><i class="fa-solid fa-check"></i>Korekta kolorów/cieni/świateł</li>
+                            <li class="list__item"><i class="fa-solid fa-check"></i>Przygotowanie do druku</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- portfolio section -->
+            <section class="portfolio" id="portfolio">
+                <h2 class="portfolio__header section-header">Portfolio</h2>
+
+                <!-- slider -->
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="slider"></div>
+                        <div class="slider-nav"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- prices section -->
+            <section class="prices" id="prices">
+                <h2 class="prices__header section-header">Cennik</h2>
+
+                <table class="prices__table">
+                    <tr>
+                        <th>Usługa</th>
+                        <th>Cena brutto</th>
+                        <th>Przewidywany czas realizacji</th>
+                    </tr>
+                    <tr>
+                        <td class="services"><i class="fa-solid fa-check"></i>Projekt logo (3 wersje graficzne znaku)
+                        </td>
+                        <td class="services-price">650zł</td>
+                        <td class="realization-time">5-8 dni roboczych</td>
+                    </tr>
+                    <tr>
+                        <td class="services"><i class="fa-solid fa-check"></i>Identyfikacja wizualna (obejmująca logo,
+                            wizytówki,
+                            teczkę, kopertę, papier firmowy)</td>
+                        <td class="services-price">1600zł</td>
+                        <td class="realization-time">10-15 dni roboczych</td>
+                    </tr>
+                    <tr>
+                        <td class="services"><i class="fa-solid fa-check"></i>Projekt wizytówki (2 projekty)</td>
+                        <td class="services-price">100zł</td>
+                        <td class="realization-time">1-3 dni robocze</td>
+                    </tr>
+                    <tr>
+                        <td class="services"><i class="fa-solid fa-check"></i>Miniatura ofert dla serwisów sprzedażowych
+                            (2 sztuki)
+                        </td>
+                        <td class="services-price">20zł</td>
+                        <td class="realization-time">1-2 dni robocze</td>
+                    </tr>
+                    <tr>
+                        <td class="services"><i class="fa-solid fa-check"></i>Plakat</td>
+                        <td class="services-price">200zł</td>
+                        <td class="realization-time">4-8 dni roboczych</td>
+                    </tr>
+                    <tr>
+                        <td class="services"><i class="fa-solid fa-check"></i>Ulotka jednostronna (2 projekty)</td>
+                        <td class="services-price">150zł</td>
+                        <td class="realization-time">2-3 dni robocze</td>
+                    </tr>
+                    <tr>
+                        <td class="services"><i class="fa-solid fa-check"></i>Projekt DL</td>
+                        <td class="services-price">120zł</td>
+                        <td class="realization-time">2-3 dni robocze</td>
+                    </tr>
+                    <tr>
+                        <td class="services"><i class="fa-solid fa-check"></i>Projekt DL składany</td>
+                        <td class="services-price">200zł</td>
+                        <td class="realization-time">3-5 dni roboczych</td>
+                    </tr>
+                    <tr>
+                        <td class="services"><i class="fa-solid fa-check"></i>Fotomanipulacja</td>
+                        <td class="services-price">400zł</td>
+                        <td class="realization-time">5-10 dni roboczych</td>
+                    </tr>
+                    <tr>
+                        <td class="services"><i class="fa-solid fa-check"></i>Wycinanie tła</td>
+                        <td class="services-price">od 10zł</td>
+                        <td class="realization-time">1 dzień roboczy</td>
+                    </tr>
+                    <tr>
+                        <td class="services"><i class="fa-solid fa-check"></i>Opakowanie produktu</td>
+                        <td class="services-price">od 350zł</td>
+                        <td class="realization-time">2-10 dni roboczych</td>
+                    </tr>
+                    <tr>
+                        <td class="services"><i class="fa-solid fa-check"></i>Menu restauracji</td>
+                        <td class="services-price">250-500zł</td>
+                        <td class="realization-time">2-6 dni roboczych</td>
+                    </tr>
+                    <tr>
+                        <td class="services"><i class="fa-solid fa-check"></i>Projekt oklejenia auta</td>
+                        <td class="services-price">350-900zł</td>
+                        <td class="realization-time">5-10 dni roboczych</td>
+                    </tr>
+                    <tr>
+                        <td class="services"><i class="fa-solid fa-check"></i>Przygotowanie do druku</td>
+                        <td class="services-price">od 15zł</td>
+                        <td class="realization-time">2-5 dni roboczych</td>
+                    </tr>
+                    <tr>
+                        <td class="services"><i class="fa-solid fa-check"></i>Korekta koloru/cieni/świateł</td>
+                        <td class="services-price">od 15zł</td>
+                        <td class="realization-time">2-5 dni roboczych</td>
+                    </tr>
+                    <tr>
+                        <td class="services"><i class="fa-solid fa-check"></i>Pozostałe</td>
+                        <td class="services-price">Do uzgodnienia</td>
+                        <td class="realization-time">Do uzgodnienia</td>
+                    </tr>
+                </table>
+
+            </section>
+
+            <!-- contact section -->
+            <section class="contact" id="contact">
+                <h2 class="contact__header section-header">Kontakt</h2>
+                <div class="form-area">
+                    <div class="contact-types">
+                        <div class="contact-types__type">
+                            <img src="./dist/img/icons/mail.svg" alt="" class="contact-icon">
+                            <p class="contact-header">Email</p>
+                            <p class="contact-info">gratysdesign@gmail.com</p>
+                        </div>
+                        <div class="contact-types__type">
+                            <img src="./dist/img/icons/brand-messenger.svg" alt="" class="contact-icon">
+                            <p class="contact-header">Messenger</p>
+                            <p class="contact-info">Filip Gratys</p>
+                        </div>
+                        <div class="contact-types__type">
+                            <img src="./dist/img/icons/phone-call.svg" alt="" class="contact-icon">
+                            <p class="contact-header">Telefon</p>
+                            <p class="contact-info">880 742 721</p>
+                        </div>
+                    </div>
+
+
+                    <!-- mail form -->
+                    <form action="mail.php" method="post" class="e-mail-form">
+                        <p class="error"></p>
+                        <div class="form-box">
+                            <input type="text" class="name" id="name" name="name" placeholder="Twoje imię" required>
+                            <input type="text" class="mail" id="mail" name="mail" placeholder="Twój e-mail" required>
+                            <textarea class="message-box" id="message-box" name="message-box"
+                                placeholder="Twoja wiadomość" required></textarea>
+                            <button class="send-message">Wyślij wiadomość</button>
+                        </div>
+                        <p class="msg-status"></p>
+                    </form>
+            </section>
+        </div>
+        </div>
+    </main>
+
+    <!-- footer section -->
+    <!-- @include 'footer.kit' -->
+
+    <script src="./dist/js/main.min.js"></script>
+</body>
+
+</html>
