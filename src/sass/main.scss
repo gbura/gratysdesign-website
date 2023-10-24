@@ -341,7 +341,7 @@ section {
 		border-radius: 50%;
 		background-color: #fff;
 		opacity: 0.75;
-		transition: opacity ease 0.25s;
+		transition: opacity 0.25s ease;
 	}
 
 	.slider-nav a:hover {
