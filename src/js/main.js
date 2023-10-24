@@ -5,6 +5,51 @@ const submitBtn = document.querySelector('.send-message')
 const error = document.querySelector('.error')
 const footerYear = document.querySelector('.footer-year')
 
+// const imagesArr = [
+// 	'portfoliog.jpg',
+// 	'portfolio2.jpg',
+// 	'portfolio4.jpg',
+// 	'portfolio5.jpg',
+// 	'portfolio12.jpg',
+// 	'portfolio13.jpg',
+// 	'portfolio14.jpg',
+// 	'portfolio1.jpg',
+// 	'mockmicha.jpg',
+// 	'mockmk.png',
+// ]
+
+// const slider = document.querySelector('.slider')
+// const sliderNav = document.querySelector('.slider-nav')
+// let currentIndex = 0
+
+// // function showing images
+// function showSlide(index) {
+// 	const images = document.querySelectorAll('.slider img')
+// 	images.forEach((image, i) => {
+// 		if (i === index) {
+// 			image.style.display = 'block'
+// 		} else {
+// 			image.style.display = 'none'
+// 		}
+// 	})
+// }
+
+// // Loop for adding images to slider
+// for (let i = 0; i < imagesArr.length; i++) {
+// 	const newImg = document.createElement('img')
+// 	newImg.src = `./dist/img/` + imagesArr[i]
+// 	newImg.setAttribute('id', 'slide-' + (i + 1))
+// 	slider.appendChild(newImg)
+
+// 	const sliderBtn = document.createElement('a')
+// 	sliderBtn.addEventListener('click', () => {
+// 		currentIndex = i
+// 		showSlide(currentIndex)
+// 	})
+
+// 	sliderNav.appendChild(sliderBtn)
+// }
+
 const imagesArr = [
 	'portfoliog.jpg',
 	'portfolio2.jpg',
@@ -22,14 +67,12 @@ const slider = document.querySelector('.slider')
 const sliderNav = document.querySelector('.slider-nav')
 let currentIndex = 0
 
-// function showing images
+// Function showing images
 function showSlide(index) {
 	const images = document.querySelectorAll('.slider img')
 	images.forEach((image, i) => {
 		if (i === index) {
-			image.style.display = 'block'
-		} else {
-			image.style.display = 'none'
+			image.style.opacity = '1'
 		}
 	})
 }
@@ -43,8 +86,14 @@ for (let i = 0; i < imagesArr.length; i++) {
 
 	const sliderBtn = document.createElement('a')
 	sliderBtn.addEventListener('click', () => {
+		const prevIndex = currentIndex
 		currentIndex = i
 		showSlide(currentIndex)
+		const scrollAmount = slider.offsetWidth * (currentIndex - prevIndex)
+		slider.scrollBy({
+			left: scrollAmount,
+			behavior: 'smooth',
+		})
 	})
 
 	sliderNav.appendChild(sliderBtn)
