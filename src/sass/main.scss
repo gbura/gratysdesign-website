@@ -68,19 +68,13 @@ section {
 		z-index: 500;
 	}
 
-	&__nav-item {
-		padding: 1rem;
-		border-radius: 50%;
+	&__nav-item a {
+		padding: 1.5rem;
 		transition: transform 0.5s ease;
 
 		&:hover {
 			transform: scale(0.9);
 		}
-	}
-
-	&__nav-item.active {
-		background-color: #fc5656;
-		transition: 0.5s ease;
 	}
 
 	&__logo {
