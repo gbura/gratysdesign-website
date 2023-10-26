@@ -425,7 +425,6 @@ section {
 			background-color: var(--color-bg-variant);
 			color: var(--color-white);
 			transition: transform 0.5s ease;
-			cursor: pointer;
 
 			&:hover {
 				transform: scale(0.9);
@@ -554,22 +553,22 @@ section {
 			flex-direction: column;
 			gap: 2rem;
 			list-style: none;
+		}
 
-			&--item {
-				color: var(--color-bg-variant);
+		&__list-item {
+			color: var(--color-bg-variant);
 
-				&:hover {
-					color: #000000;
-				}
+			&:hover {
+				color: #000000;
 			}
 		}
 	}
 
-	.copyright {
+	&__copyright {
 		font-size: 1.2rem;
 	}
 
-	.creator {
+	&__creator {
 		margin-top: -4rem;
 		font-size: 1.2rem;
 
