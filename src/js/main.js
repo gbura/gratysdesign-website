@@ -3,7 +3,7 @@ const inputMail = document.querySelector('#mail')
 const messageBox = document.querySelector('.message-box')
 const submitBtn = document.querySelector('.send-message')
 const error = document.querySelector('.error')
-const footerYear = document.querySelector('.footer-year')
+const footerYear = document.querySelector('.footer__year')
 
 const imagesArr = [
 	'portfoliog.jpg',
